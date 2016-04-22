@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  App Title  -->
+	<title>Capture - Free Bootstrap App Landing Page</title>
+	<!--  App Description  -->
+	<meta name="description" content="Capture is a free bootstrap v3.3.2 app landing page perfect to present you IOS, android or windows application in an elegant way."/>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/owl.transitions.css"/>
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/ajaxchimp.js"></script>
+	<script type="text/javascript" src="js/scrollTo.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
+	<script type="text/javascript" src="js/nicescroll.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+	<!--  About Section  -->
+	<section class="about" id="about">
+		<h1 class="text-center animated wow fadeInRight">Design Patterns</h1>
+		<br>
+		<h2 class="text-center animated wow fadeInLeft">State Design Pattern</h2>
+		<div class="container newspaper animated wow fadeInLeft features_list">
+		<p>We are currently using the state design pattern to allow an object to alter its behaviour when its internal state changes. It’s a type of caching where we store some information to decide which state it’s currently in, and will be added to the overhead of each page request. In our case we want to save a state when a user logs in. We are therefore using PHP to start a session, which is a basic type for session data in order to reduce serialization costs.</p>
+		<br><br><br>
+		<pre><code>
+session_start();
+$_SESSION["uuid"] = $uname;
+		</code></pre>
+		<p>This session will then last throughout the application as is used in all of the different type of communication tools: Messaging, News Feed, TeaRoom. When the user then logs out from the app the session will end and the information is removed from the state.</p>
+		</div>
+		<h2 class="text-center animated wow fadeInLeft">Template View</h2>
+		<div class="container newspaper animated wow fadeInLeft features_list">
+		<p>The app implements a common template view, and construct views using this template view. This template view includes a consistent header and footer throughout the app such that the user can browse through a familiar UI. We have designed it such that the layout can be separated from the specific UI components and UI processing. The base layout stays the same even if the pages differ in some way to make the user feel like it’s in the right “room” at certain times. The design layout is built upon jQuery Mobile and is designed on top of that. We have also been consistent with using CSS for layout wherever we could because it is faster than rendering a table-based layout. Headers, footers and content are all positioned in CSS. Because of the common layout for pages we are using we are increasing the accessibility and ease of use for the user. Each page also does one specific tasks to maximise performance.</p>
+		</div>
+		<h2 class="text-center animated wow fadeInLeft">Model View Controller</h2>
+		<div class="container newspaper animated wow fadeInLeft features_list">
+		<p>TeaMe is presented by using the MVC model to distinguish between the model, view and the controller. The MVC model lets the user see the view and use the controller, while the controller is the bridge to the model in order to retrieve/put data in the database. 
+		<br>
+		The view manages the display of information and responds to requests for information about its state. Our view is built in HTML and CSS and is the whole UI to the user.
+		<br>
+		The controller then interprets both mouse and keyboard inputs for the user, and informs the model and the view to change. Since HTML has some attributes that acts as a controller such as buttons, HREF links to direct to other destinations etc. we can include HTML as part of our controller. In the case of our messaging systems we have JavaScript/jQuery to deal with the functions. When the user submits a form in e.g the login page or registering page, the form is linked to an action in PHP. When the user performs these actions the view will change according to what data it gets from the model.
+		<br>
+		The model manages the behaviour and data of the application domain, responds to requests and instructions to change or get information about its state. In the form example the user will click it and the PHP will send some type of HTTP request to our server. This request might include SQL queries to GET or POST to the database. </p>
+		</div>
+	</section>
+	<!--  End About Section  -->
+
+</body>
+</html>

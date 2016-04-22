@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  App Title  -->
+	<title>Capture - Free Bootstrap App Landing Page</title>
+	<!--  App Description  -->
+	<meta name="description" content="Capture is a free bootstrap v3.3.2 app landing page perfect to present you IOS, android or windows application in an elegant way."/>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/owl.transitions.css"/>
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/ajaxchimp.js"></script>
+	<script type="text/javascript" src="js/scrollTo.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
+	<script type="text/javascript" src="js/nicescroll.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+	<!--  About Section  -->
+	<section class="about" id="about">
+		<h1 class="text-center animated wow fadeInRight">System Manual</h1>
+		<div class="container animated wow fadeInLeft features_list">
+		<p>Since our client didn’t require any specific server, we used our local server in the development process of the application.  
+
+		Instructions to deploy the application:
+		<table border="1" style="width:100%">
+			<tr>
+				<td>1. Install the server:</td>
+				<td>2. Create the database:</td>
+				<td>3. Install Cordova:</td>
+			</tr>
+			<tr>
+				<td>XAMPP server is used in the development of this application and for the usage of the database.
+				This link can be used to download and install XAMPP:
+				<br>
+				<a href="https://www.apachefriends.org/index.html">Install XAMPP</a>
+				<br>
+				Activate MySQL Database server from ‘Manage Servers’ option in XAMPP
+				Connect to the localhost to check if the local server works
+				</td>
+				<td>Connect to the  PhpMyAdmin by typing localhost/phpmyadmin in the browser.
+				<br>
+				Create Database and tables with the same name as in the php files of the application
+				</td>
+				<td>For details about how to use Cordova, see this link:
+				<a href="https://cordova.apache.org">https://cordova.apache.org</a>
+				<br>
+				This example is for simulating the application on an iOS device. In order to simulate the app on e.g. an iOS simulator you need to have a the SDK Xcode on your mac.
+				To install Cordova you need to install an npm package with this command in your terminal:
+				<br>
+				<pre><code>
+npm install -g cordova 
+				</code></pre>
+				Then you will have to navigate to application folder in order to build and simulate the app. Since all the packages are the iOS platform is already installed in the document folder, all you need to run in the terminal is the command:
+				<pre><code>
+cordova emulate ios --target="iPhone-5"
+				</code></pre>
+				Here you can also choose which iPhone generation you want to run it on.
+				</td>
+			</tr>
+		</table>
+		</p>
+		</div>
+	</section>
+	<!--  End About Section  -->
+
+</body>
+</html>

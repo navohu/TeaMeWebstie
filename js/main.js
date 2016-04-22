@@ -17,11 +17,13 @@ $(document).ready(function(){
 		$(window).scrollTo({top:$("#hero").position().top, left:'0px'}, 1000);		
 	});
 
+	//Create HTML snippets
+	// var html = '<form name="form" action="login.php" method="post" class="inputForms"><label for="txt-email">Email Address</label><input type="text" name="uname" id="uname" value=""><label for="txt-password">Password</label><input type="password" name="pass" id="pass" value=""><fieldset data-role="controlgroup"></fieldset><input type="submit" name="submit" value="Log in"></form>';
+	// document.getElementById('backend').innerHTML = html;
+	// var temp = document.createElement('template');
+	// temp.innerHTML = '<div>x</div><span>y</span>';
 
-
-
-
-
+	// var frag = temp.content;
 
 
 	//Show & Hide menu on mobile
@@ -144,8 +146,8 @@ $(document).ready(function(){
 
 	//Popup video
 	$('#play_video').click(function(e){
+		debugger;	
 		e.preventDefault();	
-
 		var video_link = $(this).data('video');
 		video_link = '<iframe src="' + video_link + '" width="500" height="208" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 

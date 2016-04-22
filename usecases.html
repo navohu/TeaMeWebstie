@@ -30,143 +30,332 @@
 
 </head>
 <body>
-	<!--  About Section  -->
-	<section class="about" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 text-center animated wow fadeInLeft">
-					<div class="iphone">
-						<img src="img/iphone.png" alt="" titl="">
-					</div>
-				</div>
-				<div class="col-md-6 animated wow fadeInRight">
-					<div class="features_list">
-						<!-- TABLE WITH USE CASES -->
-          <h1 id="section5">Use Case 1</h1>
-          <table border="1" style="width:100%">
-            <tr><td><h3>Use Case: Add a New Team</h3></td></tr>
-            <tr><td>
-              <b>ID:</b> UC1
-            </td></tr>
-            <tr><td>
-              <b>Brief Description: </b> The users can add a new team
-            </td></tr>
-            <tr><td>
-              <b>Primary Actors: </b> Users
-            </td></tr>
-            <tr><td>
-              <b>Secondary Actors: </b> Users invited to the team
-            </td></tr>
-            <tr><td>
-              <b>Preconditions: </b> Users must be logged in to the system
-            </td></tr>
-            <tr><td>
-              <b>Main Flow:  </b> 
-              <ol>
-                <li>Use case starts when user selects “+”</li>
-                <li>The system shows a new page to create a new team</li>
-                <li>User types a team name </li>
-                <li>User types the emails of the users he/she wants to add to the team </li>
-                <li>User clicks “Done” </li>
-                <li>The system takes the user to teams page</li>
-              </ol>
-            </td></tr>
-            <tr><td>
-              <b>Post Conditions: </b> The system will add a new team to the list of teams
-            </td></tr>
-            <tr><td>
-              <b>Alternative Flow: </b> If the invitation email is incorrect notify the user
-            </td></tr>
-          </table>
-          <!-- END TABLE -->
+  <!--  About Section  -->
+  <section class="about" id="about">
+  <h1 class="text-center fadeInRight">Use Cases</h1>
+  <div class="container newspaper animated wow fadeInLeft">
+    <h3 class="text-center fadeInRight">Use Case 1</h3>
+    <table border="1" cellspacing="0" cellpadding="0" > 
+    <tbody>
+    <tr>
+    <td valign="top" ><p><b> Use Case: </b>Choose a team</p></td>
+    </tr>
 
-          <!-- USE CASE 2 -->
-          <h1 id="section6">Use Case 2</h1>
-          <table border="1" style="width:100%">
-            <tr><td><h3>Use Case: Send a file</h3></td></tr>
-            <tr><td>
-              <b>ID:</b> UC2
-            </td></tr>
-            <tr><td>
-              <b>Brief Description: </b> The users can send pictures and files
-            </td></tr>
-            <tr><td>
-              <b>Primary Actors: </b> Users
-            </td></tr>
-            <tr><td>
-              <b>Secondary Actors: </b> Receiving user
-            </td></tr>
-            <tr><td>
-              <b>Preconditions: </b> Users must be logged in to the system <br>Files must be in a correct format
-            </td></tr>
-            <tr><td>
-              <b>Main Flow:  </b> 
-              <ol>
-                <li>Use case starts when user selects a team </li>
-                <li>The system takes to the selected team page </li>
-                <li>Employee chooses “News Feed” by sliding the page to the right </li>
-                <li>The system displays the selected page</li>
-                <li>Employee clicks file symbol, adds a file and then “Send”</li>
-                <li>The file will be seen in the News Feed page</li>
-              </ol>
-            </td></tr>
-            <tr><td>
-              <b>Post Conditions: </b> The system will share files with all members of the group
-            </td></tr>
-            <tr><td>
-              <b>Alternative Flow: </b> None
-            </td></tr>
-          </table>
-          <!-- END TABLE -->
+    <tr>
+    <td valign="top" ><p><b>ID:</b> UC1</p></td>
+    </tr>
 
-          <!-- USE CASE 3 -->
-          <h1 id="section7">Use Case 3</h1>
-          <table border="1" style="width:100%">
-            <tr><td><h3>Use Case: Tick done tasks</h3></td></tr>
-            <tr><td>
-              <b>ID:</b> UC3
-            </td></tr>
-            <tr><td>
-              <b>Brief Description: </b> The users can tick done tasks
-            </td></tr>
-            <tr><td>
-              <b>Primary Actors: </b> Users
-            </td></tr>
-            <tr><td>
-              <b>Secondary Actors: </b> None
-            </td></tr>
-            <tr><td>
-              <b>Preconditions: </b> Employee must be logged in to the system <br> There must be tasks in the state “not ready”
-            </td></tr>
-            <tr><td>
-              <b>Main Flow:  </b> 
-              <ol>
-                <li>Use case starts when user selects a team </li>
-                <li>The system displays that team page </li>
-                <li>Employee chooses “To do list” by sliding the current page</li>
-                <li>The system takes the employee to tasks page</li>
-                <li>The employee tick the boxes in front of the tasks he/she has completed</li>
-                <li>The system saves changes and displays updated done tasks list</li>
-              </ol>
-            </td></tr>
-            <tr><td>
-              <b>Post Conditions: </b> None
-            </td></tr>
-            <tr><td>
-              <b>Alternative Flow: </b> If an employee does not tick a box in front of the tasks, the list will not be updated
-            </td></tr>
-          </table>
-          <!-- END TABLE -->
-					</div>					
-				</div>
-			</div>
-		</div>
+    <tr>
+    <td valign="top" ><p><b>Brief Description:</b></p>
 
-		<div class="about_video show_video">
-			<a href="" class="close_video"></a>
-		</div>
-	</section>
-	<!--  End About Section  -->
+    <p>The users are able to choose a team</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Primary Actors:</b></p>
+
+    <p>Users</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Secondary Actors:</b></p>
+
+    <p>None</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Preconditions:</b></p>
+
+    <p>Users must be logged in to the system</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Main Flow:</b></p>
+
+    <ol start="1" type="1"> <li>Use case starts when user selects “Choose a team”</li>
+    <li>The system directs the user to a new page displaying the set of teams the user is a member of</li>
+    <li>User chooses one the teams and clicks on its name</li>
+    <li>The system takes the user to the feelings page</li>
+    </ol> </td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Postconditions:</b></p>
+
+    <p>The user is in the team he/she has selected</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Alternative flows:</b></p>
+
+    <p>If the user is not a member of any team, the system displays nothing instead of list of the teams.</p></td>
+    </tr>
+
+    </tbody>
+    </table>
+
+    <p><br />
+    <br />
+    </p>
+    <h3 class="text-center fadeInRight">Use Case 2</h3>
+    <table border="1" cellspacing="0" cellpadding="0" > 
+    <tbody>
+    <tr>
+    <td valign="top" ><p><b> Use Case: </b>Create a new team</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>ID:</b> UC2</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Brief Description:</b></p>
+
+    <p>The users can create a new team</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Primary Actors:</b></p>
+
+    <p>Users</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Secondary Actors:</b></p>
+
+    <p>Users added to the team</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Preconditions:</b></p>
+
+    <p>Users must be in the user page</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Main Flow:</b></p>
+
+    <ol start="1" type="1"> <li>Use case starts when user selects “Choose a team”</li>
+    <li>The system directs the user to a new page displaying the set of teams the user is a member of</li>
+    <li>User selects “+” in the up right corner of the page</li>
+    <li>The system shows a new page to create a new team</li>
+    <li>User types a team name and clicks create</li>
+    <li>The system creates a new team</li>
+    <li>User types the usernames of the users he/she wants to add and clicks add</li>
+    <li>The system adds all the users the current user enters</li>
+    </ol> </td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Postconditions:</b></p>
+
+    <p>The system will add a new team and make the current users admin of that new team</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Alternative flows:</b></p>
+
+    <p>If the user is not a member of any team, the system displays nothing instead of list of the teams.</p></td>
+    </tr>
+
+    </tbody>
+    </table>
+
+    <p><br />
+    <br />
+    </p>
+    <h3 class="text-center fadeInRight">Use Case 3</h3>
+    <table border="1" cellspacing="0" cellpadding="0" > 
+    <tbody>
+    <tr>
+    <td valign="top" ><p><b> Use Case: </b>Edit user details</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>ID:</b> UC3</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Brief Description:</b></p>
+
+    <p>The users can update their personal details</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Primary Actors:</b></p>
+
+    <p>Users</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Secondary Actors:</b></p>
+
+    <p>None</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Preconditions:</b></p>
+
+    <p>Users must be logged in and in the user page</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Main Flow:</b></p>
+
+    <ol start="1" type="1"> <li>Use case starts when user selects to edit their profile</li>
+    <li>The system takes the user to the pages of their personal details</li>
+    <li>User makes some changes to the current details</li>
+    <li>User clicks submit</li>
+    <li>The system takes the user to the user page</li>
+    </ol> </td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Postconditions:</b></p>
+
+    <p>The system will update and save all the details the user has edited and saved</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Alternative flows:</b></p>
+
+    <p>If the user clicks back button without saving changes, the system will direct the user to user page without updating the profile details</p></td>
+    </tr>
+
+    </tbody>
+    </table>
+
+    <p><br />
+    <br />
+    <br />
+    </p>
+    <h3 class="text-center fadeInRight">Use Case 4</h3>
+    <table border="1" cellspacing="0" cellpadding="0" > 
+    <tbody>
+    <tr>
+    <td valign="top" ><p><b> Use Case: </b>Send a message in the TeaRoom</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>ID:</b> UC4</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Brief Description:</b></p>
+
+    <p>The users can have a chat with all the people in the TeaRoom</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Primary Actors:</b></p>
+
+    <p>Users</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Secondary Actors:</b></p>
+
+    <p>The other users in the TeaRoom</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Preconditions:</b></p>
+
+    <p>Users must be logged in to the system</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Main Flow:</b></p>
+
+    <ol start="1" type="1"> <li>Use case starts when user selects to go to the TeaRoom</li>
+    <li>The system takes the user to the TeaRoom</li>
+    <li>User selects the message box and types their messages</li>
+    <li>User send their messages</li>
+    <li>The system displays the messages on the screen</li>
+    </ol> </td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Postconditions:</b></p>
+
+    <p>The system will display the messages for all the users who are currently in the TeaRoom</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Alternative flows:</b></p>
+
+    <p>If there are no users in the TeaRoom, the messages of the current use will not be seen by others</p></td>
+    </tr>
+
+    </tbody>
+    </table>
+
+    <p><br />
+    <br />
+    </p>
+    <h3 class="text-center fadeInRight">Use Case 5</h3>
+    <table border="1" cellspacing="0" cellpadding="0" > 
+    <tbody>
+    <tr>
+    <td valign="top" ><p><b> Use Case: </b>Post in the news feed</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>ID:</b> UC5</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Brief Description:</b></p>
+
+    <p>The users are able to write posts in the news feed</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Primary Actors:</b></p>
+
+    <p>Users</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Secondary Actors:</b></p>
+
+    <p>The other users</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Preconditions:</b></p>
+
+    <p>Users must be logged in to the system</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Main Flow:</b></p>
+
+    <ol start="1" type="1"> <li>Use case starts when user chooses a team and goes to the home page of that team</li>
+    <li>The system takes the user to the news feed page</li>
+    <li>User selects the are separated for writing posts</li>
+    <li>Users writes their posts and shares</li>
+    <li>The system displays the post on the screen</li>
+    </ol> </td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Postconditions:</b></p>
+
+    <p>The system will display the messages for all the members of the team in which the current user have written a post</p></td>
+    </tr>
+
+    <tr>
+    <td valign="top" ><p><b>Alternative flows:</b></p>
+
+    <p>None</p></td>
+    </tr>
+
+    </tbody>
+    </table>
+  </div>
+  </section>
+  <!--  End About Section  -->
 
 </body>
 </html>

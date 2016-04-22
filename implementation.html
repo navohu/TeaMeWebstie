@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  App Title  -->
+	<title>Capture - Free Bootstrap App Landing Page</title>
+	<!--  App Description  -->
+	<meta name="description" content="Capture is a free bootstrap v3.3.2 app landing page perfect to present you IOS, android or windows application in an elegant way."/>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/owl.transitions.css"/>
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/ajaxchimp.js"></script>
+	<script type="text/javascript" src="js/scrollTo.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
+	<script type="text/javascript" src="js/nicescroll.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+	<!--  About Section  -->
+	<section class="about" id="about">
+		<h1 class="text-center animated wow fadeInRight">Implementation Details</h1>
+		<br>
+		<h2 class="text-center animated wow fadeInLeft">Front End</h2>
+		<div class="container newspaper animated wow fadeInLeft features_list">
+		<p>Our application design for the front-end implementation is based on jQuery Mobile alongside with HTML, CSS and jQuery (JavaScript). The reason we picked jQuery Mobile is because there are ready made CSS and JavaScript files that provides many features that are often used in mobile applications such as navigation bars, icons etc.
+		<br>
+		The most important part of the front-end implementation is the use of the PubNub API which provides different chat functionalities. You can create chat channels with either “one to one”, “one to many” or “many to many”. This API has been reused three places in the application: The Messaging Page, The Newsfeed Page, The TeaRoom Page. 
+		<br>
+		Our PubNub implementation is also connected to the back-end where we will set the userID of the app by getting the username from the database of the person who logged in by using $_SESSION with PHP. 
+		<pre><code>
+		var username = '<?php echo $_SESSION["uuid"]?>';
+		pubnub =PUBNUB.init({
+		   publish_key : publish_key,
+		   subscribe_key : subscribe_key,
+		   uuid : username
+		});</code></pre>
+		</p>
+
+		<p>We use this firstly to initialise PubNub, but we then use the userID to show presence and also who’s writing the current message/post. The PubNub provides a presence state where you can check who else is in the room.
+		<br>
+		In the implementation of the API each chat needs a subscriber key and a publishing key, where you always need a subscriber key in order to see anything. The chat also needs a specific channel in order to differentiate between the different chats. The PubNub API then connects with the HTML part of the code and takes the value input from the text area and publish it when clicking the #break-send button or by pressing the enter key.
+		<pre><code>pubnub.bind('click', pubnub.$('break-send'), function(e) { 
+	pubnub.publish({
+	channel : channel, 
+	message : pubnub.get_uuid() + ' just posted: ' + '<br/>' + $('textarea#messageInput').val() 
+});
+	$('#messageInput').val('');
+});</code></pre>
+		</p>
+		
+		</div>
+		<h2 class="text-center animated wow fadeInLeft">Back End</h2>
+		<div class="container newspaper animated wow fadeInLeft features_list">
+		<p>For the back-end of our application PHP, SQL are used as languages, and PhpMyAdmin is used for maintaining the database. 
+		<br>
+		PhpMyAdmin is used as a tool to connect and manage our database system. Especially, as we were working with php files alongside html files, it was easier and useful to implement PhpMyAdmin for database creation and manipulation. PhpMyAdmin made it easier for us to create our database and its tables, save the data we have stored and also maintain all the stored data safely.
+		<br>
+		After creating the database by the help of PhpMyAdmin, 3 tables are created each for different purpose:
+		</p>
+		<table border="1" style="width:100%">
+			<tr><td>Users - to store all user details including the details that added afterwards: id, first name, last name, username, email address, password, mood, location and status. Mood, location and status are the details which are added afterwards when the application asks user to submit their mood and when the user wants to edit or add some details.</td></tr>
+			<tr><td>Teams - to store all teams with their admins by whom they have been created: team id, team name, team admin.</td></tr>
+			<tr><td>Users_per_Team - to store all team-user relations by which it is possible to know what team includes which users and also what teams a user is a member of: team id, user id.</td></tr>
+		</table>
+		<p>
+		<br>
+		This is the only table which maintains many-to-many relationship and doesn’t include any primary key. Which means one team can have many users and a user can be a member of many teams.
+		<br>
+		After the database and the tables are created, filling and using the data inside them are done by the help of the php files and using PHP and SQL languages. 
+		<br>
+		SQL language is used in the php files in order to insert data to the database and get data from the database when needed. In our source code, a set of SQL commands and queries are used to access and manipulate data in the database.
+		<br>
+		</p>
+		<p>
+		PHP is used as a server side language. So, some of the html files use php and some files are php in order to communicate with the database. Inside html files, form is used in order to connect with the php file which will help to add or update details in the database. This is one of the examples how it is used:
+		</p>
+		<pre><code id="backend">
+&lt;form name="form" action="login.php" method="post" class="inputForms"&gt;
+&lt;label for="txt-email"&gt;Email Address&lt;/label&gt;
+&lt;input type="text" name="uname" id="uname" value=""&gt; 
+&lt;label for="txt-password"&gt;Password&lt;/label&gt;
+&lt;input type="password" name="pass" id="pass" value=""&gt;
+&lt;fieldset data-role="controlgroup"&gt;&lt;/fieldset&gt;
+&lt;input type="submit" name="submit" value="Log in"&gt;
+&lt;/form&gt;
+        </code></pre>
+        <p>
+        Here an html file uses php file, and by the help of it, it adds new information to the database. 
+        <br>
+		Also, in order to know the recently logged in user who is currently using the application, session is used. The current user’s username is saved to a session, then session is started. 
+		</p>
+		<pre><code>
+$uname = $_SESSION["uuid"];
+session_start();
+		</code></pre>
+		<p>
+		As the current user’s details are needed throughout the whole application, the command to start the session is almost used in all the files.
+		<br>
+		The most important parts of the application that use PHP and SQL is the Login and Registering system. In order to use the application the first thing is to register with it. So, each time a new user registers with the application, all the details provided are added to the Users table. Hence, each time a user tries to login the username and the password are checked with that table in the database. 
+		User page and Feelings page use the same table in order to fetch and update data. So that in the User page all the personal details of a particular user is fetched from the database and displayed on the screen, and they are updated each time the user edits their details. Also, since a user is asked to provide his/her mood in the Feelings page each time after logging in, the feeling he/she selects is saved to the appropriate column of Users table, and is changed only the user updates it from the page for editing the details or when he/she logs in next time.
+		<br>
+		However, Team system uses 2 tables to store all the data belongs to each team. So, team names and their admins are inserted to the respective columns of the Team table at the time they are created. At the same time, the ids of the team and its admin are added to the Users_per_Team table since the admin of a team is its user, too. Then as users are added to a team, the primary key from Users table which belongs to the added user (id), and the primary key from the Teams table which belongs to the team that the user is added (team id) are added to the Users_per_Team table. 
+		<br>
+		Like the inserting and updating process of the data to the database, the fetching process of the data also uses SQL queries inside the appropriate php files. 
+		</p>
+		</div>
+		<h2 class="text-center animated wow fadeInLeft">From Web app to Mobile app</h2>
+		<div class="container newspaper animated wow fadeInLeft features_list">
+		<p>Apache Cordova is our wrapper to make the web application into a mobile application when the product is ready. It’s fairly simple to use Cordova where you will have to download Apache Cordova and its plugins and then run a few commands in the command line in order to create the mobile application. If the server is already running on your computer the application will still run smoothly and connects to the database. You will now be able to see the application in a simulator which you can also connect to your phone.</p>
+		</div>
+	</section>
+	<!--  End About Section  -->
+
+</body>
+</html>
