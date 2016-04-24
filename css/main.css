@@ -483,6 +483,10 @@ a.app_link{
 	text-align: center;
 }
 
+.small-iphone{
+	max-width: 150px;
+}
+
 .demo .iphone img{
 	width: 100%;
 	height: auto;
@@ -622,7 +626,7 @@ a.app_link{
 }
 
 .testimonials .testimonials_list{
-	max-width: 820px;
+	max-width: 920px;
 	margin: 0 auto;
 }
 
