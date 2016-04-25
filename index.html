@@ -56,7 +56,7 @@
 							<li class="animated wow fadeInLeft"><a href="#vcontrol">Version Control</a></li>
 	                    </ul>
                     </li>
-                    <li class="animated wow fadeInLeft" data-wow-delay=".4s"><a href="#community">Community Forum</a></li>
+                    <li class="animated wow fadeInLeft" data-wow-delay=".4s"><a href="#contact">Contact details</a></li>
 				</ul>
 			</nav>
 			<span class="burger_icon">menu</span>
@@ -69,8 +69,8 @@
 	<section class="hero" id="hero">
 		<div class="container">
 			<div class="caption">
-				<h1 class="text-uppercase  animated wow fadeInLeft">Connect with your co-workers.</h1>
-				<p class="text-lowercase  animated wow fadeInLeft">With only your smartphone and the TeaMe app you can easily connect and socialise with other co-workers that are working remotely.</p>
+				<h1 class="text-uppercase animated wow fadeInLeft" style="color:white">Connect with your co-workers.</h1>
+				<p class="text-lowercase  animated wow fadeInLeft" style="color:white">With only your smartphone and the TeaMe app you can easily connect and socialise with other co-workers that are working remotely.</p>
 			</div>			
 		</div>
 	</section>
@@ -96,7 +96,7 @@
 			          	<p>The concept of the app is to provide a social platforms for employers and employees of the company to interact in a social way as well as keeping track of tasks of each member of the group and be able to speak in both a common platform/chat and private message individual team members.</p>
 
 			          	
-						<a href="#" class="app_store_btn text-uppercase" id="play_video" data-video="http://www.youtube.com/embed/Bm3NV3gGB2w?autoplay=1&showinfo=0">
+						<a href="#" class="app_store_btn text-uppercase" id="play_video" data-video="https://www.youtube.com/embed/V0QaAlYY0LA">
 							<i class="play_icon"></i>
 							<span>About Video</span>
 						</a>
@@ -148,7 +148,7 @@
 
 
 <!--  Prototype Section  -->
-	<section class="testimonials animated wow fadeIn" id="demo" data-wow-duration="2s">
+	<section class="testimonials animated wow fadeIn" id="prototype" data-wow-duration="2s">
 		<div class="container">
 			<div class="testimonials_list">
 			<h1 class="text-uppercase text-center">Prototype description</h1>
@@ -297,7 +297,7 @@
 				<div class="col-sm-6 col-md-6 details animated wow fadeInDown" data-wow-delay=".1s">
 					<img src="img/f_icon5.png" alt="" title="">
 					<a href="prioritisation.html"><h1 class="text-uppercase">Prioritisation</h1></a>
-					<a href="functional.html"><p class="text-lowercase">A finalised prioritisation list of all the requirements.</p></a>
+					<a href="prioritisation.html"><p class="text-lowercase">A finalised prioritisation list of all the requirements.</p></a>
 				</div>
 			</div>
 
@@ -352,27 +352,30 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="text-uppercase text-center">Testing strategies</h1>
-				<div class="col-md-6 text-center animated wow fadeInLeft">
+				<div class="col-md-6 animated wow fadeInLeft">
 					<div class="features_list">
 						<p>During this term we have researched different methods on how to test the software we are producing and developing for the next term. We will try to use different algorithms to make automated tests. We will do this by connecting it to our vesrion control system and try out all the changes we have made. The testing is important to spot mistakes or errors at an early stage such that the errors can be fixed before we move on. There is a online tool called Travis that will help us test and deploy our web application for free, and since it can connect to Github it is benefitial for us. </p>
-						</div>
+						
 						<p>An effective testing strategy includes automated tests to efficiently reduce risk. We can do tests with different methos:</p>
 				        <ul>
-				            <li><b>Unit tests</b> validate the small components of the system, making sure they take the right input and outputs correctly. We can do a unit test on individual classes in our application to verify that they work under different cases.</li> 
-				            <li><b>Integration test</b> is an exercise of an entire subsystem of the project and ensures that a set of components play nicely together within that subset.</li>
-				            <li><b>Functional testing</b> is a test to verify scenarios from start to beginning that your users will engage in.</li>
+				            <li><p class="p1"><b>Unit tests</b> validate the small components of the system, making sure they take the right input and outputs correctly. We can do a unit test on individual classes in our application to verify that they work under different cases.</p></li> 
+				            <li><p class="p1"><b>Integration test</b> is an exercise of an entire subsystem of the project and ensures that a set of components play nicely together within that subset.</p></li>
+				            <li><p class="p1"><b>Functional testing</b> is a test to verify scenarios from start to beginning that your users will engage in.</p></li>
 				        </ul>
+			        </div>
 				</div>
 				<div class="col-md-6 animated wow fadeInRight">
 					<div class="features_list">
 						<p>So why bother with unit and integration tests if functional tests hit the whole system? Two reasons: test performance and speed of recovery. Functional tests tend to be slower to run, so use unit tests at compile time as your sanity-check. And when an integration test fails, it pin-points the bug's location better than functional tests, making it faster for developers to diagnose and fix. A healthy strategy reqires tests at all levels of the technology stack to ensure each part, as well as the system as a whole, works correctly.</p>
+						<p>We have also carried out other types of testing to improve the user experience for the user. The first testing strategy was 'User acceptance testing' which has been based on our five use cases. The second testing has been 'Responsive design testing' and 'Cross platform testing' which makes the app responsive to different screen sizes and works on different platforms. The third testing strategy was user experience testing which has been carried out with a questionnaire to two different users, getting asked the same questions.</p>
+						<a href="acceptance.html" class="app_store_btn text-uppercase animated wow fadeInLeft">
+						<i class="iphone_icon"></i>
+						<span>Testing Details</span>
+						</a>
+
 					</div>					
 				</div>
 			</div>
-		</div>
-
-		<div class="about_video show_video">
-			<a href="" class="close_video"></a>
 		</div>
 	</section>
 	<!--  End Testing Section  -->
@@ -409,19 +412,52 @@
 
 
 	<!--  Development Plan Section  -->
-	<section class="demo" id="testing">
+	<section class="demo" id="plan">
 		<div class="container">
-			<div class="row">
-				<h1 class="text-uppercase text-center">Development Plan</h1>
-				<div class="col-md-6 text-center animated wow fadeInLeft">
-					<div class="features_list">
-						<p>During the development process we had many different ideas of what we wanted the app to be like, and we changed our mind as we developed as we saw what would work better depending on the requirements.</p>
-					</div>
-				</div>
-				<div class="col-md-6 animated wow fadeInRight">
-					<div class="features_list">
-						<p>So why bother with unit and integration tests if functional tests hit the whole system? Two reasons: test performance and speed of recovery. Functional tests tend to be slower to run, so use unit tests at compile time as your sanity-check. And when an integration test fails, it pin-points the bug's location better than functional tests, making it faster for developers to diagnose and fix. A healthy strategy reqires tests at all levels of the technology stack to ensure each part, as well as the system as a whole, works correctly.</p>
-					</div>					
+			<h1 class="text-uppercase text-center">Development Plan</h1>
+			<div class="features_list text-center">
+			<p>During the development process we had many different ideas of what we wanted the app to be like, and we changed our mind as we developed as we saw what would work better depending on the requirements.</p>
+			</div>
+				<div class="testimonials_list">
+				<ul class="list-unstyled text-center slides clearfix" id="tslider">
+					<li>
+						<blockquote style="max-height: 200px"><img style="max-width: 100px" src="img/Picture1.png" alt="" title="">
+						</blockquote>
+					</li>
+
+					<li>
+						<blockquote style="max-height: 200px"><img style="max-width: 100px" src="img/Picture2.png" alt="" title="">
+						</blockquote>
+					</li>
+
+					<li>
+						<blockquote style="max-height: 200px"><img style="max-width: 100px" src="img/Picture3.png" alt="" title="">
+						</blockquote>
+					</li>
+
+					<li>
+						<blockquote style="max-height: 200px"><img style="max-width: 100px" src="img/Picture4.png" alt="" title="">
+						</blockquote>
+					</li>
+
+					<li>
+						<blockquote style="max-height: 200px"><img style="max-width: 100px" src="img/Picture5.png" alt="" title="">
+						</blockquote>
+					</li>
+
+					<li>
+						<blockquote style="max-height: 200px"><img style="max-width: 100px" src="img/Picture6.png" alt="" title="">
+						</blockquote>
+					</li>
+
+					<li>
+						<blockquote style="max-height: 200px"><img style="max-width: 100px" src="img/Picture7.png" alt="" title="">
+						</blockquote>
+					</li>
+				</ul>
+				<div id="slider_nav">
+					<div id="prev_arrow"></div>
+					<div id="next_arrow"></div>
 				</div>
 			</div>
 		</div>
@@ -430,7 +466,7 @@
 
 
 	<!--  Management Section  -->
-	<section class="about" id="manuals">
+	<section class="about" id="management">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 text-center animated wow fadeInLeft">
@@ -493,7 +529,7 @@
 
 
 	<!--  Footer Section  -->
-	<footer>
+	<footer id="contact">
 		<div class="features_list animated wow fadeInRight">
 			<h1 class="text-uppercase">Contact Details</h1>
 		</div>
