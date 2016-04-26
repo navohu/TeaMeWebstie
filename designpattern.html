@@ -58,6 +58,18 @@ $_SESSION["uuid"] = $uname;
 		<br>
 		The model manages the behaviour and data of the application domain, responds to requests and instructions to change or get information about its state. In the form example the user will click it and the PHP will send some type of HTTP request to our server. This request might include SQL queries to GET or POST to the database. </p>
 		</div>
+		<div class="features_list text-center">
+			<div class="row">
+				<div class="col-md-6 animated wow fadeInRight">
+					<h2>Login</h2>
+					<p>Our app is using the Login design pattern for when the user need to identify themselves so that stored data about/of them can be used in the process they are in. Therefore the app will ask the users to login using a combination of their username and a password. We are using a login system because the app is consisting of data about or belonging to the user, where we will have to protect that information. The information that is stored is personal information and includes name, email, location.  It is convenient to have users enter the login information once and use it again for future visits to the site.</p>
+				</div>
+				<div class="col-md-6 animated wow fadeInRight">
+					<h2>Reliable Sessions</h2>
+					<p>A reliable session is when messages gets transferred end-to-end safely from one user to another. We have put this design pattern in both our newsfeed, chat and TeaRoom. The messages gets transferred through PubNub and is using a unique subscribing and publishing key for each chat room such that only the people in the specific room can receive and send messages.</p>
+				</div>
+			</div>
+		</div>
 	</section>
 	<!--  End About Section  -->
 
