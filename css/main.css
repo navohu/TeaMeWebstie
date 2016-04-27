@@ -94,7 +94,9 @@ a:focus{
 .question{
 	color: green;
 }
-
+.img_size{
+	max-width: 40%;
+}
 
 
 

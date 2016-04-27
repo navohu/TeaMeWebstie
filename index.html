@@ -55,6 +55,7 @@
 							<li class="animated wow fadeInLeft"><a href="#plan">Development Plan</a></li>
 							<li class="animated wow fadeInLeft"><a href="#management">Management</a></li>
 							<li class="animated wow fadeInLeft"><a href="#vcontrol">Version Control</a></li>
+							<li class="animated wow fadeInLeft"><a href="#references">References</a></li>
 	                    </ul>
                     </li>
                     <li class="animated wow fadeInLeft" data-wow-delay=".4s"><a href="#contact">Contact details</a></li>
@@ -160,7 +161,7 @@
 							<span class="author text-uppercase">TeaMe</span>
 							<div class="row">
 								<div class="col-md-10 animated wow fadeInDown" data-wow-delay="0s">
-								<p>The first page that occurs when you click the application logo is the page which includes TeaMe logo, ‘Log in’ and ‘Register’ buttons.</p>
+								<p>The first page that occurs when you click the application logo is the home page where you can choose between either clicking ‘Log in’ or the ‘Register’ button, where you will already need to have a user profile in order to log in.</p>
 								</div>
 								<div class="col-md-2 animated wow fadeInDown" data-wow-delay="0s">
 									<div class="iphone">
@@ -558,16 +559,21 @@
 						<h1 class="text-uppercase">Management and work packages</h1>
 						<p>This term we have split tasks more or less equal between each other. Even if we had primary roles and responsibility for major parts of the application we still had to work closely together in order to connect the fron end with the back end. Our main responsibility between each other were</p>
 						<h3>Nathalie: Front-end</h3>
-						<p>Team key member in the management of the development process, where different tools have been used to track the process, such as the Gantt Chart. Nathalie has been working on the front end mainly implementing all the chat functionalities, as well as connecting the front-end with the back-end. Front-end includes all functionality the user interacts with and also the design of the app.
+						<div class="newspaper">
+						<p>Team key member in the management of the development process, where different tools have been used to track the process, such as the Gantt Chart. 
+						Nathalie has currently been working on the front-end of the application where she has provided the main functionality of the app such as the newsfeed, chat room and ‘TeaRoom’, where she decided to use an API called PubNub to get the subscribing/publishing functionality. She made this decision because she researched different other chat APIs but this seemed like the best solution. She have also been responsible for designing the UI/UX of the application by using the jQuery Mobile framework and CSS3, which was used because jQuery Mobile provides certain UI components that are satisfactory for a mobile UI, such as a navigation bar. The conversion between a web application to a mobile application has also been her responsibility, where she has tested the app on the iOS simulator on Mac. She has also been responsible for creating the website, where she has rebuilt the whole infrastructure in order to create a clearer and more professional way to display the application. Nathalie has contributed with architectural diagrams, design patterns, the development plan, technical achievements and described the implementation details.
  						</p>
+ 						</div>
 						<h3>Laman: Back-end</h3>
-						<p>Laman has been working on the back-end of the app dealing with retrieveing data and putting data in the database from input in the front-end. She has managed to create a many to many relational database in order to create the teams. Also, she has been working in collaboration with Nathalie on the connection of the front and back end parts of the application. 
+						<div class="newspaper">
+						<p>Laman has been working on the back-end of the app dealing with retrieveing data and putting data in the database from input in the front-end. She has managed to create a many to many relational database in order to create the teams. Also, she has been working in collaboration with Nathalie on the connection of the front and back end parts of the application. She managed to retrieve data such as getting the username of the current logged in user, edit profile details in the user profile page, register users, let already registered users be able to log in and create a team infrastructure. Laman has provided information for the website where she has been writing about testing details and how we have solved our problems. She updated our use case scenarios as the client changed requirements. The user manual is also written by Laman, and she has also provided deeper information on the back-end implementation details.
  						</p>
+ 						</div>
  						<p>More details about specific details about content deliverables contribution and time management of the tasks can be found in the Gantt Chart provided below.
 						<br>
 						<a href="deliver/GT2.xls" class="app_store_btn text-uppercase animated wow fadeInLeft">
 						<i class="android_icon"></i>
-						<span>Gantt Chart</span>
+						<span>Gantt Chart 205P</span>
 						</a>
 						</p>
 					</div>	
@@ -623,6 +629,35 @@
 		<a href="https://github.com/navohu/ApplicationTeaMe"><img src="img/githubL.png"></a>
 	</section>
 	<!--  End Version Control Section  -->
+
+	<!--  References Control Section  -->
+	<section class="sub_box" id="references">
+		<h1 class="animated wow fadeInDown">References</h1>
+		<p class="cta_text">We have used several referencs in order to build our application, which includes both tutorials and books, as well as help from our Teaching Assistant. These are the languages we have used together with libraries, an API and database. Click the pictures to go the tutorial we've used or their website for documentation.</p>
+		<a  href="http://www.w3schools.com/html/"><img style="max-width: 8%;" src="deliver/s1.png"></a>
+		<a  href="http://www.w3schools.com/css/"><img style="max-width: 8%;" src="deliver/s2.png"></a>
+		<a  href="http://www.w3schools.com/js/"><img style="max-width: 8%;" src="deliver/s3.png"></a>
+		<a  href="http://www.w3schools.com/jquery/"><img style="max-width: 8%;" src="deliver/s4.png"></a>
+		<a  href="https://www.pubnub.com/"><img style="max-width: 8%;" src="deliver/s5.png"></a>
+		<a  href="https://cordova.apache.org/"><img style="max-width: 8%;" src="deliver/s7.png"></a>
+		<a  href="https://secure.php.net/"><img style="max-width: 8%;" src="deliver/s8.png"></a>
+		<a  href="https://www.apachefriends.org/index.html"><img style="max-width: 8%;" src="deliver/s9.png"></a>
+		<a  href="http://www.apache.org/"><img style="max-width: 8%;" src="deliver/s10.png"></a>
+		<a  href="https://www.mysql.com/"><img style="max-width: 8%;" src="deliver/s11.png"></a>
+		<a  href="https://www.phpmyadmin.net/"><img style="max-width: 8%;" src="deliver/s12	.png"></a>
+		<p class="cta_text">Alongside all the tools we have used we have also used these references for documentation, as well as searching for many answers on StackOverflow and other websites that provides solutions to questions:
+		<br><br>
+		Lambert, C. (2015) Mastering jQuery Mobile http://www.amazon.com/Mastering-jQuery-Mobile-Chip-Lambert/dp/178355908X/ref=sr_1_2?ie=UTF8&qid=1454065723&sr=8-2&keywords=jquery+mobile
+		<br><br>
+		Lung, C. (2010) Create a blog with JQuery Mobile and PHP http://www.giantflyingsaucer.com/blog/?p=1856
+		<br><br>
+		PHPKnowHow (2016) MySQL Many to Many Relationships http://www.phpknowhow.com/mysql/many-to-many-relationships/
+		<br><br>
+		ThemeRoller http://themeroller.jquerymobile.com/
+		</p>
+
+	</section>
+	<!--  End References Control Section  -->
 
 
 
